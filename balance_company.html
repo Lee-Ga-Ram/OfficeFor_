@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OfficeFor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/balance.css">
+    <link rel="stylesheet" href="css/top_bar.css">
+    <link href="css/main.css" rel="stylesheet" />
+<!--탭 아이콘-->
+<link rel="shortcut icon" type="text/css" href="img/favicon.ico" />
+<link rel="appel-touch-icon-precomposed" href="img/favicon.ico" />
+<style>
+  body{
+  background-image:url('images/OfficeFor_Worldcup.png');
+  background-repeat:no-repeat;
+background-size: 1920px 1080px;
+}
+</style> 
+  </head>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><img src="images/OfficeFor_Logo2.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="type_test.html">유형 테스트</a></li>
+                    <li class="nav-item"><a class="nav-link" href="balance.html">밸런스 게임</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tip.html">꿀팁 게시판</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br><br><br><br>
+
+    <body onload="preLoaingImg()">
+      <div class="wrap">
+      <p id="roundTitle"></p>
+      <!-- <header>
+        <h1>회사</h1>
+        <p id="roundTitle">최악의 회사환경을 골라주세요</p>
+      </header> -->
+      <div class="content default" id="content">
+        <!-- <div style="background-image: url('images/OfficeFor_Worldcup.png');"></div> -->
+        <button id="btnGameStart" onclick="start()">시작하기</button>
+        <!-- <style>
+          div {
+            background-image: url('images/OfficeFor_Worldcup_03.png');
+          }
+          </style> -->
+      </div>
+      <footer class="footer soff" id="footer">
+        <button id="cancel" onclick="lezhin.Event.clickCancel()">다시하기</button>
+        <button id="prev" onclick="lezhin.Event.clickPrev()">뒤로가기</button>
+      </footer>
+    </div>
+    <script src="js/balance_company.js" async defer></script>
+    <script>
+      function start() {
+        lezhin.start();
+      }
+      function preLoaingImg() {
+        const preLoadingList = [
+          'images/company/01.png', 'images/company/02.png', 'images/company/03.png', 'images/company/04.png', 'images/company/05.png', 'images/company/06.png', 'images/company/07.png', 'images/company/08.png', 'images/company/09.png', 'images/company/10.png', 'images/company/11.png', 'images/company/12.png', 'images/company/13.png', 'images/company/14.png', 'images/company/15.png', 'images/company/16.png'
+        ], length = preLoadingList.length, tObj = document.getElementsByTagName("BODY")[0];
+        let i = 0, imgNode;
+        const hiddenNode = document.createElement('DIV');
+        hiddenNode.className = 'pre_load soff';
+        for(i; i < length; i++) {
+          imgNode = document.createElement('IMG');
+          imgNode.setAttribute('src', preLoadingList[i]);
+          hiddenNode.appendChild(imgNode);
+        }
+        tObj.appendChild(hiddenNode);
+      }
+    </script>
+  </body>
+</html>

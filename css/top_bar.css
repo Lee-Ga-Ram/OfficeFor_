@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+li{list-style:  none;}
+a{text-decoration: none;}
+
+header{height: 75px; background-color: #ffffff; border: 1px solid #a3a3a3;
+       position: fixed; width: 100%; index: 9999; top: 0; left: 0;}
+
+h1{color: rgb(0, 0, 0); line-height: 75px; float: left;}
+.menu{float:right;}
+.menu li{float:left;}
+.menu a{line-height: 75px; color: rgb(0, 0, 0); padding: 0 15px; display: block;}
+
+.wrapper{width: 1170px; margin: 0 auto;}
+.clearfix{content: ''; display: block; clear: both;}

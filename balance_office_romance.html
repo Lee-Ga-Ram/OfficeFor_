@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OfficeFor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/balance.css">
+    <link rel="stylesheet" href="css/top_bar.css">
+<!--탭 아이콘-->
+<link rel="shortcut icon" type="text/css" href="img/favicon.ico" />
+<link rel="appel-touch-icon-precomposed" href="img/favicon.ico" />
+<style>
+  body{
+  background-image:url('images/OfficeFor_Worldcup.png');
+  background-repeat:no-repeat;
+background-size: 1920px 1080px;
+}
+</style>
+  </head>
+  <body onload="preLoaingImg()">
+    <div class="wrap">
+
+      <header>
+        <div class="wrapper">
+            <h1><li><a href="index.html"><img src="images/OfficeFor_Logo.png"></a></li></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="type_test.html">유형 테스트</a></li>
+                    <li><a href="balance.html">밸런스 게임</a></li>
+                    <li><a href="tip.html">꿀팁 갤러리</a></li>
+                </ul>
+            </nav>
+        </div>
+      </header><br><br><br><br><br><br>
+
+      <p id="roundTitle"></p>
+      <!-- <header>
+        <h1>사내연애</h1>
+        <p id="roundTitle">최악의 사내연애를 골라주세요</p>
+      </header> -->
+      <div class="content default" id="content">
+        <button id="btnGameStart" onclick="start()">시작하기</button>
+      </div>
+      <footer class="footer soff" id="footer">
+        <button id="cancel" onclick="lezhin.Event.clickCancel()">다시하기</button>
+        <button id="prev" onclick="lezhin.Event.clickPrev()">뒤로가기</button>
+      </footer>
+    </div>
+    <script src="js/balance_office_romance.js" async defer></script>
+    <script>
+      function start() {
+        lezhin.start();
+      }
+      function preLoaingImg() {
+        const preLoadingList = [
+          'images/01.jpg', 'images/02.jpg', 'images/03.jpg', 'images/04.jpg', 'images/05.jpg', 'images/06.jpg', 'images/07.jpg', 'images/08.jpg', 'images/09.jpg', 'images/10.jpg', 'images/11.jpg', 'images/12.jpg', 'images/13.jpg', 'images/14.jpg', 'images/15.jpg', 'images/16.jpg'
+        ], length = preLoadingList.length, tObj = document.getElementsByTagName("BODY")[0];
+        let i = 0, imgNode;
+        const hiddenNode = document.createElement('DIV');
+        hiddenNode.className = 'pre_load soff';
+        for(i; i < length; i++) {
+          imgNode = document.createElement('IMG');
+          imgNode.setAttribute('src', preLoadingList[i]);
+          hiddenNode.appendChild(imgNode);
+        }
+        tObj.appendChild(hiddenNode);
+      }
+    </script>
+  </body>
+</html>
