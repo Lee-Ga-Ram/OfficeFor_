@@ -1,138 +1,170 @@
-#main {
-	min-height: 86.2vh;
-	background: #00ff0000;
-	padding-top: 60px;
-}
-
-#titleBox {
+/* result로 넘어갈 때 display: block; */
+#result {
+	display: none;
+	min-height: 0px;
+	background: rgba(255, 255, 255, 0);
 	text-align: center;
-	animation: fade-in 0.5s ease-out 0.3s both, going-down 0.5s ease-out 0.3s both;
+	word-break: break-all;
 }
 
-:root {
-	--main-lightpink: #2572ff;
-	--main-lightpurple: #ddd6f3;
-	--main-gray: #8d8d8d;
-	--main-lightgray: #d9d4cf;
-	--warning-red: #2572ff;
-}
-
-h1,
-.mainText {
-	line-height: 5px;
-	line-height: 3rem;
-	font-size: 40px;
-	font-size: 2.5rem;
-	margin-top: 5%;
-	font-weight: bolder;
-}
-
-h3,
-.elevatorPitch {
-	line-height: 35.2px;
-	line-height: 2.2rem;
-	font-size: 24px;
-	font-size: 1.5rem;
-	font-weight: lighter;
-	color: var(--main-gray);
-	font-family: 'a고딕13', sans-serif;
-}
-
-.main_img {
-	display: inline-block;
-	margin: 0 auto;
-	margin-top: 20px;
-	width: 740px;
-	height: 325px;
-}
-
-
-#name-input {
-	box-sizing: border-box;
-	margin: 20px 30% 10px 35%;
-	width: 30%;
-}
-
-#name-input > input {
-	width: 100%;
-	height: 40px;
-	border: 1px solid;
-	border-color: var(--main-lightgray);
-	border-radius: 20px;
-	font-weight: lighter;
-	font-size: 19.2px;
-	font-size: 1.2rem;
-	text-align: center;
-	opacity: 0;
-	animation: fade-in 0.4s ease-out 1.4s both, going-down 0.4s ease-out 1.4s both;
-}
-
-#name-input :focus {
-	outline: none;
-}
-
-.check-name {
-	display: inline-block;
-	margin: 15px 10%;
-	width: 80%;
-	text-align: center;
-}
-.warning {
-	color: var(--warning-red);
+.result.title {
+	margin-top: -30px;
+	font-size: 19px;
 	font-family: 'a고딕14', sans-serif;
 }
-.start-wrap {
-	margin: 0 20% 0 26.5%;
-	margin-bottom: -90%;
-	width: 40%;
-}
-.start {
-	box-sizing: border-box;
-	width: 100%;
-	height: 60px;
-	line-height: 60px;
-	border-radius: 50px;
-	text-align: center;
-	background-color: #2572ff;
-	border: 0;
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 32px;
-	font-size: 2rem;
-	animation: fade-in 0.25s ease-out 0.95s both, going-down 0.25s ease-out 0.95s both,
-		start-flicker 1.5s infinite;
-	cursor: pointer;
-	margin-left: 10%;
-}
-.start:hover,
-.start:focus {
-	animation-play-state: paused;
-	background-color: #f84a70;/*시작 버튼 호버 색*/
-	border: none;
-	outline: none;
-}
-.start:active {
-	animation-play-state: running;
+
+.res.desc {
+	font-size: 15px;
+	font-family: 'a고딕13', sans-serif;
+	margin-bottom: 10px;
+	text-align: justify; 
 }
 
-.BottomAdd {
-	padding-top: 40px;
+#score-box {
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-family: 'a고딕15', sans-serif;
+}
+#score-box > .title {
+	animation: fade-in 0.6s ease-out 0.4s forwards, going-down 0.6s ease-out 0.4s forwards;
+	opacity: 0;
+	margin-bottom: 30px;
+}
+
+#score-box > .point {
+	margin: 10px 0 50px 0;
+	font-size: 64px;
+	font-size: 4rem;
+	font-weight: bolder;
+	animation: fade-in 0.6s ease-out 1.8s forwards, going-down 0.6s ease-out 1.8s forwards;
+	opacity: 0;
+}
+
+.art {
+	width: 100%;
+	height: 100%;
+	max-height: 700px;
+	background-color: rgba(0, 0, 0, 0);
+	animation: fade-in 0.3s ease-out 3.2s both, going-down 0.3s ease-out 3.2s both;
+	opacity: 0;
+}
+.art > img {
+	display: block;
+	width: 25%;
+	height: 25%;
+	margin-bottom: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	object-fit: contain;
+}
+.desc {
+	margin: 30px 7.5%;
+	width: 85%;
+	line-height: 28.8px;
+	line-height: 1.8rem;
+	font-size: 17.6px;
+	font-size: 1.1rem;
+	font-weight: 350;
+}
+#desc-box ~ p {
+	display: inline-block;
+	margin-top: -10%;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.go-artist {
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.btn {
+	box-sizing: border-box;
+	margin: 0 20% 15px 20%;
+	min-width: 200px;
+	height: 35px;
+	line-height: 30px;
+	border: 1.5px solid;
+	border-radius: 20px;
+	background: white;
+	color: black;
+	font-weight: 500;
+	transition: background-color 0.2s ease-in-out;
+}
+
+
+/* media query */
+@media all and (min-width: 486px) {
+	.art {
+		max-height: 1100px;
+	}
+	.artist {
+		margin: 0 7.5% 30px 7.5%;
+	}
 }
 
 @media all and (min-width: 768px) {
-	.BottomAdd {
-		padding-top: 37.5px;
+	#score-box > .point {
+		font-size: 72px;
+		font-size: 4.5rem;
+	}
+	.pin {
+		width: 40px;
+		height: 40px;
+	}
+	.art {
+		max-height: 1500px;
+	}
+	.desc {
+		margin: 30px 7.5%;
+		line-height: 32px;
+		line-height: 2rem;
+		font-size: 19.2px;
+		font-size: 1.2rem;
+	}
+	.hash {
+		font-size: 17.6px;
+		font-size: 1.1rem;
 	}
 }
 
 @media all and (min-width: 1024px) {
-	.BottomAdd {
-		padding-top: 40px;
+	#score-box > .point {
+		font-size: 80px;
+		font-size: 5rem;
+	}
+	.pin {
+		width: 50px;
+		height: 50px;
+	}
+	.art {
+		margin: 0 5%;
+		width: 90%;
+		max-height: 2000px;
+	}
+	.desc {
+		font-size: 20.8px;
+		font-size: 1.3rem;
+	}
+	.hash {
+		font-size: 19.2px;
+		font-size: 1.2rem;
 	}
 }
 
 @media all and (min-width: 1440px) {
-	.BottomAdd {
-		padding-top: 50px;
+	#score-box > .point {
+		font-size: 88px;
+		font-size: 5.5rem;
+	}
+	.art {
+		max-height: 2000px;
+	}
+	.desc {
+		margin: 35px 5% 50px 5%;
+		width: 90%;
+		line-height: 33.6px;
+		line-height: 2.1rem;
+		font-size: 22.4px;
+		font-size: 1.4rem;
 	}
 }

@@ -4,7 +4,8 @@
 	opacity: 0;
 	/*background: white;*/
 	font-family: 'a고딕13', sans-serif;
-	min-height: 100vh;
+	min-height: 50vh;
+	min-width: -30vh;
 	margin-bottom: 30px;
 }
 
@@ -60,7 +61,7 @@
 	font-size: 17.6px;
 	font-size: 1.1rem;
 	font-family: 'a고딕13', sans-serif;
-	color: #434040;
+	color: #000000d4;
 	text-align: left;
 	transition: background-color, color 0.2s linear;
 	opacity: 0;

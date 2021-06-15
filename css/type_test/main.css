@@ -1,5 +1,5 @@
 #main {
-	min-height: 100vh;
+	min-height: 86.2vh;
 	background: #00ff0000;
 	padding-top: 60px;
 }
@@ -19,10 +19,11 @@
 
 h1,
 .mainText {
-	line-height: 48px;
+	line-height: 5px;
 	line-height: 3rem;
 	font-size: 40px;
 	font-size: 2.5rem;
+	margin-top: 5%;
 	font-weight: bolder;
 }
 
@@ -41,8 +42,8 @@ h3,
 	display: inline-block;
 	margin: 0 auto;
 	margin-top: 20px;
-	width: 250px;
-	height: 250px;
+	width: 740px;
+	height: 325px;
 }
 
 
@@ -82,7 +83,7 @@ h3,
 }
 .start-wrap {
 	margin: 0 20% 0 26.5%;
-	margin-bottom: -30%;
+	margin-bottom: -90%;
 	width: 40%;
 }
 .start {
