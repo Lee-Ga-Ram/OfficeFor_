@@ -4317,7 +4317,12 @@ textarea.form-control-lg {
 .link-light:hover, .link-light:focus {/**/
   color: #f9fafb;
 }
-
+.justify-content-sm-center {
+  justify-content: center !important;
+}
+.d-sm-flex {
+  display: flex !important;
+}
 .d-grid { /**/
   display: grid !important;
 }
@@ -4527,7 +4532,7 @@ textarea.form-control-lg {
   .px-4 { /**/
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
-    padding-bottom: 10%; 
+    padding-bottom: 2%; 
   }
   .px-5 { /**/
   padding-right: 3rem !important;
