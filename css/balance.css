@@ -67,7 +67,10 @@ body,th,td,input,select,textarea,button {
   background-color: #f3f6f7;
   color:#426af7;
 }
-
+.round_T{
+  text-emphasis-color: #ffffff00;
+  font-size: 0px;
+}
 a {
   color:#333;
   text-decoration:none
@@ -112,24 +115,22 @@ h1 {font-weight:bold;font-size:2rem;line-height:1.4} */
 #cancel,
 #prev {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+  font-weight: 900;
+	font-size: 20px;
 	color: #426af7;
-  padding: 8px 20px;
+  padding: 16px 40px;
   margin:0 auto;
 	background: -moz-linear-gradient(
-		top,#ffffff);
+		top,#ffffff00);
 
 	background: -webkit-gradient(
 		linear, left top, left bottom,
-		from(#ffffff));
-    
+		from(#ffffff00));
+
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	border: 1px solid #426af7;
-	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 5px rgba(16,161,96,0.6);
+	border: 1px solid #4269f7ec;
 	-webkit-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
 	box-shadow:
@@ -138,41 +139,27 @@ h1 {font-weight:bold;font-size:2rem;line-height:1.4} */
 	text-shadow:
 		0px -1px 3px rgba(255,255,255,0.8),
 		0px 1px 0px rgba(255,255,255,0.3);
-}
 
 #btnGameStart:hover,
 #cancel:hover,
 #prev:hover {
-  background-color: #426af7;
+  background-color: #ffffff;
   color:#426af7;
 }
 
 .list_ideal {display:flex;justify-content:space-evenly}
 .list_ideal li {
-  width:35%;
+  width:65%;
   position: relative;
   display: -ms-flexbox;
+  max-width: 400px;
   display: flex;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   justify-content:space-between;
 }
-.list_ideal li a {display:block;width:100%}
-.list_ideal li a[hover="true"] img{
-  -webkit-filter: grayscale(100%);
-  filter: gray;
-}
-.list_ideal li a.final img{
-  -webkit-filter: unset;
-  filter: unset;
-}
-.list_ideal li span {display:block;overflow:hidden;width:100%;border:1px solid #ddd;border-radius:10px;}
-.list_ideal li span img {width:100%;vertical-align:top}
-.list_ideal li strong {display:block;text-align:center}
-.list_ideal li a[hover="true"] strong {text-decoration:underline}
-
 
 #history .tit {margin:10px 0;font-size:18px;font-weight:bold;text-align:center}
-#history #modal {width:100%; height:100%}
+#history #modal {width:0%; height:0%}
 #history .history_box .round {width: 100%;margin-bottom:10px;text-align:center}
 #history .history_box .round:last-child {margin-bottom: 0}
 #history .history_box .round img {
@@ -184,7 +171,7 @@ h1 {font-weight:bold;font-size:2rem;line-height:1.4} */
 #history .history_box .round img:last-child {margin-right: 0}
 #history img.dim {
   -webkit-filter: grayscale(100%);
-  filter: gray;
+  filter: rgba(128, 128, 128, 0);
 }
 /* footer */
 footer {
