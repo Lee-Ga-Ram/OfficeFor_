@@ -776,14 +776,14 @@
 
 /*닫는 버튼*/
 .btn-primary {
-  color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  color: #426af7;
+  background-color: #ffffff;
+  border-color: #426af7;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #d9aa00;
-  border-color: #cca000;
+  background-color: #426af7;
+  border-color: #426af7;
 }
 
 .modal {

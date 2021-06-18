@@ -201,33 +201,6 @@ if(!window['lezhin']) {
         this.setRoundTitle();
         this.setContent();
       },
-      setHistory() {
-        const tObj = document.getElementById('modal');
-        let key, roundDiv, imgObj, roundTitleDiv, roundImgWrapDiv;
-        let historyTitleDiv = document.createElement('DIV');
-        historyTitleDiv.className = 'tit';
-        historyTitleDiv.innerText = '결과';
-        tObj.appendChild(historyTitleDiv);
-        let wrapDiv = document.createElement('DIV');
-        wrapDiv.className = 'history_box';
-        for(key in _O.Vars.gameHistory) {
-          roundDiv = document.createElement('DIV');
-          roundDiv.className = 'round';
-          roundTitleDiv = document.createElement('h5');
-          roundTitleDiv.innerText = (key === '1' ? `` : `${key}강`);
-          roundDiv.appendChild(roundTitleDiv);
-          roundImgWrapDiv = document.createElement('DIV');
-          _O.Vars.gameHistory[key].forEach((itm) => {
-            imgObj = document.createElement('IMG');
-            imgObj.setAttribute('src', itm.imgSrc);
-            imgObj.className = `history_item ${itm.selected ? '' : (key !== '1' ? 'dim' : '')}`;
-            roundImgWrapDiv.appendChild(imgObj);
-          });
-          roundDiv.appendChild(roundImgWrapDiv);
-          wrapDiv.appendChild(roundDiv);
-        }
-        tObj.appendChild(wrapDiv);
-      },
       setRoundTitle() {
         if(_O.Vars.curRound > 1) document.getElementById('roundTitle').innerText = `${_O.Vars.curRound}`;
         else document.getElementById('roundTitle').innerText = ``;
