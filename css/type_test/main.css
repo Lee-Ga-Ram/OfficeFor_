@@ -36,7 +36,7 @@ h3,
 	font-size: 1.5rem;
 	font-weight: lighter;
 	color: var(--main-gray);
-	font-family: 'a고딕13', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 .main_img {
@@ -80,7 +80,7 @@ h3,
 }
 .warning {
 	color: var(--warning-red);
-	font-family: 'a고딕14', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 .start-wrap {
 	margin: 0 20% 0 26.5%;

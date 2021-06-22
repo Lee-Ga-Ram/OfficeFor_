@@ -3,7 +3,7 @@
 	display: none;
 	opacity: 0;
 	/*background: white;*/
-	font-family: 'a고딕13', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 	min-height: 50vh;
 	min-width: -30vh;
 	margin-bottom: 30px;
@@ -47,7 +47,7 @@
 	/*margin-bottom: 30px;*/
 	font-size: 27.2px;
 	font-size: 1.7rem;
-	font-family: 'a고딕13', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 	animation: fade-in 0.5s ease-in-out 0.3s forwards;
 	opacity: 0;
 }
@@ -61,7 +61,7 @@
 	border: none;
 	font-size: 17.6px;
 	font-size: 1.1rem;
-	font-family: 'a고딕13', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 	color: #000000d4;
 	text-align: left;
 	transition: background-color, color 0.2s linear;
