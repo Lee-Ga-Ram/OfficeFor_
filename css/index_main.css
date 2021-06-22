@@ -557,7 +557,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 150%;
   height: auto;
 }
 
@@ -2064,15 +2064,15 @@ progress {
 }
 
 .table-dark {
-  --bs-table-bg: #212529;
+  --bs-table-bg: #ffffff;
   --bs-table-striped-bg: #2c3034;
   --bs-table-striped-color: #fff;
   --bs-table-active-bg: #373b3e;
   --bs-table-active-color: #fff;
   --bs-table-hover-bg: #323539;
   --bs-table-hover-color: #fff;
-  color: #fff;
-  border-color: #373b3e;
+  color: rgb(0, 0, 0);
+  border-color: #000000;
 }
 
 .table-responsive {
@@ -3859,7 +3859,7 @@ textarea.form-control-lg {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #000000;
 }
 .nav-tabs .nav-link {
   margin-bottom: -1px;
@@ -4007,6 +4007,7 @@ textarea.form-control-lg {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
+  color: #000;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center;
@@ -4179,23 +4180,23 @@ textarea.form-control-lg {
 
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: rgb(72, 72, 72);
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(0, 0, 0);
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0);
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(0, 0, 0);
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -4205,7 +4206,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4312,10 +4313,10 @@ textarea.form-control-lg {
 }
 
 .link-light { /**/
-  color: #f8f9fa;
+  color: #000000;
 }
 .link-light:hover, .link-light:focus {/**/
-  color: #f9fafb;
+  color: #000000;
 }
 .justify-content-sm-center {
   justify-content: center !important;
@@ -4488,7 +4489,7 @@ textarea.form-control-lg {
 }
 
 .bg-dark {
-  background-color: #212529 !important; /*메인 배경 색*/
+  background-color: #ffffff !important; /*메인 배경 색*/
 }
 
 .rounded-3 { /**/
