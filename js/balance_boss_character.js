@@ -30,82 +30,82 @@ if(!window['lezhin']) {
       getLists() {
         return [
           {
-            name: '고길동',
+            name: '',
             imgSrc: 'images/boss_character/01.png',
             selected: false
           },
           {
-            name: '그림하일드',
+            name: '',
             imgSrc: 'images/boss_character/02.png',
             selected: false
           },
           {
-            name: '노진구',
+            name: '',
             imgSrc: 'images/boss_character/03.png',
             selected: false
           },
           {
-            name: '둘리',
+            name: '',
             imgSrc: 'images/boss_character/04.png',
             selected: false
           },
           {
-            name: '비실이',
+            name: '',
             imgSrc: 'images/boss_character/05.png',
             selected: false
           },
           {
-            name: '에디',
+            name: '',
             imgSrc: 'images/boss_character/06.png',
             selected: false
           },
           {
-            name: '우슬라',
+            name: '',
             imgSrc: 'images/boss_character/07.png',
             selected: false
           },
           {
-            name: '집게사장',
+            name: '',
             imgSrc: 'images/boss_character/08.png',
             selected: false
           },
           {
-            name: '징징이',
+            name: '',
             imgSrc: 'images/boss_character/09.png',
             selected: false
           },
           {
-            name: '짱구',
+            name: '',
             imgSrc: 'images/boss_character/10.png',
             selected: false
           },
           {
-            name: '철수',
+            name: '',
             imgSrc: 'images/boss_character/11.png',
             selected: false
           },
           {
-            name: '톰',
+            name: '',
             imgSrc: 'images/boss_character/12.png',
             selected: false
           },
           {
-            name: '퉁퉁이',
+            name: '',
             imgSrc: 'images/boss_character/13.png',
             selected: false
           },
           {
-            name: '트리메인 부인',
+            name: '',
             imgSrc: 'images/boss_character/14.png',
             selected: false
           },
           {
-            name: '한스',
+            name: '',
             imgSrc: 'images/boss_character/15.png',
             selected: false
           },
           {
-            name: '훈이',
+            name: '',
             imgSrc: 'images/boss_character/16.png',
             selected: false
           }
