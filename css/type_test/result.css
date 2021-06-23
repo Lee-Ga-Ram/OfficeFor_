@@ -49,8 +49,8 @@
 	opacity: 0;
 }
 .art > img {
-	width: 110%;
-	height: 110%;
+	width: 130%;
+	height: 130%;
 	max-width: 200px;
 	max-height: 300px;
 	margin-bottom: 0px;
@@ -69,6 +69,7 @@
 #desc-box ~ p {
 	display: inline-block;
 	margin-top: -10%;
+	max-width: 800px;
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-weight: bolder;

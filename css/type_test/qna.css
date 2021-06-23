@@ -4,10 +4,10 @@
 	opacity: 0;
 	/*background: white;*/
 	font-family: 'Nanum Gothic', sans-serif;
-	min-height: 50vh;
+	min-height: -50%;
 	min-width: -30vh;
 	margin-bottom: 30px;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 .q.box {
@@ -38,7 +38,7 @@
 .box {
 	margin: 0 auto;
 	padding: 20px;
-	width: 80%;
+	width: 40%;
 	border-radius: 20px;
 	background-color: white;
 }
