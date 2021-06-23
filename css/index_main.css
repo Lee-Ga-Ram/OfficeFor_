@@ -173,7 +173,12 @@ strong {
 }
 
 small, .small {
-  font-size: 0.9em;
+  font-size: 0.9
+  
+  
+  
+  
+  em;
 }
 
 mark, .mark {
@@ -3802,6 +3807,7 @@ textarea.form-control-lg {
 }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+  padding-top: 5%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
