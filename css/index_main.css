@@ -4317,7 +4317,7 @@ textarea.form-control-lg {
 .card-img-top { /**/
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
-  box-shadow: 5px 5px 5px 5px #2572FF10;
+  /* box-shadow: 5px 5px 5px 5px #2572FF10; */
 }
 
 .link-light { /**/
