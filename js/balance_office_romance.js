@@ -202,8 +202,8 @@ if(!window['lezhin']) {
         this.setContent();
       },
       setRoundTitle() {
-        if(_O.Vars.curRound > 1) document.getElementById('roundTitle').innerText = `${_O.Vars.curRound}`;
-        else document.getElementById('roundTitle').innerText = ``;
+        if(_O.Vars.curRound > 1) document.getElementById('roundTitle').innerText = `${_O.Vars.curRound}깅`;
+        else document.getElementById('roundTitle').innerText = `최종 선택`;
       },
       setItem() {
         const s = _O.Html.getItem();
