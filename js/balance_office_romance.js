@@ -202,7 +202,7 @@ if(!window['lezhin']) {
         this.setContent();
       },
       setRoundTitle() {
-        if(_O.Vars.curRound > 1) document.getElementById('roundTitle').innerText = `${_O.Vars.curRound}깅`;
+        if(_O.Vars.curRound > 1) document.getElementById('roundTitle').innerText = `${_O.Vars.curRound}강`;
         else document.getElementById('roundTitle').innerText = `최종 선택`;
       },
       setItem() {
