@@ -3957,6 +3957,7 @@ textarea.form-control-lg {
   padding-top: 1rem;
   padding-bottom: 0rem;
   margin-right: 1rem;
+  max-width: 5px;
   font-size: 2rem;
   text-decoration: none;
   white-space: normal;
