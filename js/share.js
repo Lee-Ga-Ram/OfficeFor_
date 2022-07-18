@@ -84,7 +84,7 @@ function createDescription(){
 			var shareDescription = infoList[11].name;
 			break;		
 	}
-	var shareTitle = '십이간지 연예유형 결과'
+	var shareTitle = '회사유형 결과'
 	const shareImageUrl = url + '/img/image/' + imageNumber + '.png';
 	sendKakaoLink(shareTitle, shareDescription, shareImageUrl);
 }
